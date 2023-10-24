@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible'
+        content='IE=edge'>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1.0'>
+    <title>Prototype</title>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Mono&display=swap"
+        rel="stylesheet">
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: #000021;
+            color: #fff;
+            font-family: 'Noto Sans', sans-serif;
+            height: 100%;
+            margin: 0;
+            font-size: 10pt;
+            cursor: default;
+        }
+
+        div.content {
+            margin: 0 auto;
+            max-width: 90%;
+            width: 850px;
+            background: #000;
+            min-height: 100%;
+            box-sizing: border-box;
+            padding: 32px;
+            border-right: 1px solid #ffa500;
+            border-left: 1px solid #ffa500;
+        }
+
+        h1,
+        h2 {
+            color: #ffa500;
+            font-size: 20pt;
+            font-weight: normal;
+            font-family: 'Noto Sans Mono', monospace;
+            margin: 0 0 12px 0;
+        }
+
+        h2 {
+            font-size: 14pt;
+            color: #fff;
+        }
+
+        div.projects {
+            margin-top: 32px;
+        }
+
+        div.project {
+            background-color: #000021;
+            box-sizing: border-box;
+            padding: 16px;
+            border: 1px solid #000021;
+        }
+
+        div.project:hover {
+            border: 1px solid #ffa500;
+            cursor: pointer;
+        }
+
+        div.project>h3 {
+            font-family: 'Noto Sans Mono', monospace;
+            font-size: 12pt;
+            margin: 0px;
+            color: #ffa500;
+        }
+
+        div.project>p:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        div.project>h4 {
+            font-weight: bold;
+            margin: 0px;
+            font-size: 10pt;
+            color: #ffa500;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>Engineer Daryl</h1>
+        <h2>Personal projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Advent 2022</h3>
+                <p>
+                    A 2022 beer advent calendar for a friend. The calendar was made from cardboard in the shape of a
+                    triangle, representing a christmas tree. Within the triangle, there were 31 "rooms". Each room
+                    contained a beer. Each room had lights and there were buttons on the bottom.
+                </p>
+                <p>
+                    Each day my friend had to geuss which "room" was for that day by selecting a room with the buttons
+                    and pressing the ENTER button. When he would choose the correct room, the room would blink green and
+                    he could take the beer out. When it was wrong, it would blink red. If he geusses wrong three times,
+                    he had to wait 15 minutes before trying again.
+                </p>
+                <h4>Used hardware:</h4>
+                <p>
+                    Espressif ESP32 microcontroller, WS2812B LED strip, 2-by-12 LCD screen, default binary buttons
+                </p>
+                <h4>Used programming languages and frameworks:</h4>
+                <p>
+                    C++, C++ Standard Template Library, Arduino
+                </p>
+                <h4>Used techniques:</h4>
+                <p>
+                    Makefiles
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
